@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="dotty-simple">
+      <parameters>
+        <parameter value="-bootclasspath" />
+        <parameter value="/usr/local/java/jdk1.8.0_261/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_261/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_261/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_261/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_261/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_261/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_261/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_261/jre/classes" />
+      </parameters>
+    </profile>
+  </component>
+</project>
