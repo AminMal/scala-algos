@@ -7,6 +7,7 @@ object FindLastElement extends App {
   val input: List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8)
   
   def last[T](list: List[T]): T = {
+    if (list.isEmpty) throw new NullPointerException
     def iterate(src: List[T] = list): T = {
       if(src.tail.isEmpty) src.head
       else iterate(src.tail)
