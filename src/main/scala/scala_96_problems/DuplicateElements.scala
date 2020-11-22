@@ -9,15 +9,23 @@ object DuplicateElements extends App {
   // This is one possible soloution which is just so simple
   // So i implement my own flatMap
   
-  implicit class ListOps[T](list: List[T]) {
-    def myFlatMap(f: T => List[T]): List[T] = {
-      if (this.list.tail.isEmpty) f(this.list.head)
-      else f(this.list.head) ++ this.list.tail.myFlatMap(f) 
-    } 
+  
+  extension [T](list: List[T]) def myFlatMap(f: T => List[T]): List[T] = {
+    if(list.tail.isEmpty) f(list.head)
+    else f(list.head) ++ list.tail.myFlatMap(f)
   }
   
-  val list: List[Int] = List(1, 2, 3, 4)
-  println(duplicate(list))
-  println(list.myFlatMap(e => List(e, e)))
+  val intList: List[Int] = List(1, 2, 3, 4)
+  // first approach which sucks of course
+  println(duplicate(intList))
+  // second approach
+  println(intList.myFlatMap(e => List(e, e)))
+  
+  val stringList: List[String] = List("one", "two", "three")
+  // first approach
+  println(duplicate(stringList))
+  // second
+  println(stringList.myFlatMap(str => List(str, str)))
+  
   
 }

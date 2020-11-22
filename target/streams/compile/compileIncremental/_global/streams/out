@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 10 Scala sources to /home/amin-maleklo/Desktop/algos/algos_in_scala/target/scala-0.26/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /home/amin-maleklo/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-sbt-bridge/0.26.0-RC1/dotty-sbt-bridge-0.26.0-RC1.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /home/amin-maleklo/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-sbt-bridge/0.26.0-RC1/dotty-sbt-bridge-0.26.0-RC1.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0mCalling Dotty compiler with arguments  (CompilerInterface):[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/amin-maleklo/Desktop/algos/algos_in_scala/target/scala-0.26/classes:/home/amin-maleklo/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.26/0.26.0-RC1/dotty-library_0.26-0.26.0-RC1.jar:/home/amin-maleklo/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
