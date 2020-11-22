@@ -1,5 +1,7 @@
 package other_algorithms
 
+import scala.annotation.tailrec
+
 object RemoveDuplicates extends App {
 
   val source: List[Int] = List(2, 2, 4, 5, 7, 7, 8)
@@ -9,17 +11,16 @@ object RemoveDuplicates extends App {
    * functional approach
    */
   // first i need an exists(elem) function on list which does not suck!
-  implicit class ListOps[T](value: List[T]) {
-    def has(elem: T): Boolean = {
-      def iterate(index: Int = 0): Boolean = {
-        if (index >= value.length) false
-        else {
-          if (value(index) == elem) true
-          else iterate(index + 1)
-        }
+  extension [T](list: List[T]) def has(element: T): Boolean = {
+    @tailrec
+    def iterate(index: Int = 0): Boolean = {
+      if (index >= list.length) false
+      else {
+        if (list(index) == element) true
+        else iterate(index + 1)
       }
-      iterate()
     }
+    iterate()
   }
 
   def removeDuplicates(input: List[Int]): List[Int] = {
