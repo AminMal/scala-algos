@@ -28,4 +28,5 @@ object RunLengthEncoding extends App {
   
   val source = List('a', 'a', 'a', 'b', 'b', 'c')
   println(runLengthEncoding(source))
+  println("Just as expected")
 }
